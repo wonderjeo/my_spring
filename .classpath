@@ -63,5 +63,6 @@
 	<classpathentry kind="lib" path="lib/spring-websocket-4.3.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="lib/spring-websocket-4.3.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-websocket-4.3.4.RELEASE.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

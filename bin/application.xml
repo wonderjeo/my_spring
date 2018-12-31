@@ -4,4 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean id="helloWorld" class="demo.HelloWorld"></bean>
 
+<bean id ="bookService" class="demo.BookServiceImpl">
+<property name="bookDao" ref="bookDao"></property>
+</bean>
+
+<bean id="bookDao" class="demo.BookDaoImpl"></bean>
 </beans>
