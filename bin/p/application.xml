@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id ="person" class="p.Person" 
+	p:pname="Link" p:age="100" 
+	p:homeAddr-ref="homeAddr" p:companyAddr-ref="comepanyAddr">
+	</bean>
+	
+	<bean id="homeAddr" class="p.Address" 
+	p:addr="HongKong" p:tel="852">
+	</bean>
+	<bean id="comepanyAddr" class="p.Address" 
+	p:addr="Xian" p:tel="123">
+	</bean>
+</beans>
