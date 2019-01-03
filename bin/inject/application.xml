@@ -2,5 +2,5 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="userService" class="/my_spring/src/inject/MyBeanFactory.java" factory-method="createService"></bean>
+	<bean id="userService" class="inject.MyBeanFactory" factory-method="createService"></bean>
 </beans>

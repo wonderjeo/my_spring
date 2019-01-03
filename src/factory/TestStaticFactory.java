@@ -1,4 +1,4 @@
-package inject;
+package factory;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -8,16 +8,16 @@ public class TestStaticFactory {
 
 //	@Test
 //	public void demo1(){
-//		UserService userService = MyBeanFactory.createService();
+//		MyBeanFactory factory = new MyBeanFactory();
+//		UserService userService = factory.createService();
 //		userService.service();
 //	}
 	
 	@Test
 	public void demo2(){
-		String xml="inject/application.xml";
+		String xml="factory/application.xml";
 		ApplicationContext a = new ClassPathXmlApplicationContext(xml);
-		UserService userService = (UserService) a.getBean("userService");
-		
+		UserService userService = a.getBean("userService", UserService.class);
 		userService.service();
 	}
 }
