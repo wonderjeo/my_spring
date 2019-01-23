@@ -10,6 +10,7 @@ public class MyAspect implements MethodInterceptor{
 		// TODO Auto-generated method stub
 		System.out.println("Before:");
 		//手动执行目标方法
+		//
 		Object obj = arg0.proceed();
 		
 		System.out.println("After:");
